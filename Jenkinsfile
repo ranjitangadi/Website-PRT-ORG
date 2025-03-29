@@ -33,7 +33,7 @@ pipeline {
             steps {
                 script { 
                     sh "kubectl apply -f deploy.yaml"
-                    sh "kubectl rollout restart deployment website-deployment"
+                    sh "kubectl rollout restart deployment my-deployment"
                     sh "kubectl apply -f service.yaml"   
                 }    
             }
